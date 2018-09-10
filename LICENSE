@@ -186,7 +186,9 @@
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright [2018] [周文波]
+   Copyright 2018 Bob Zhou(周文波)
+   Received inspiration from retrofit project (http://square.github.io/retrofit/)
+
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
