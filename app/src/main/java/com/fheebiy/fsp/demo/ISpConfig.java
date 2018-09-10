@@ -5,6 +5,7 @@ import com.fheebiy.fsp.config.Call;
 import com.fheebiy.fsp.config.DEFAULT_INT;
 import com.fheebiy.fsp.config.DEFAULT_STRING;
 import com.fheebiy.fsp.config.KEY;
+import com.fheebiy.fsp.config.SP_FILE;
 
 /**
  * Created on 2018/9/5.
@@ -20,6 +21,7 @@ public interface ISpConfig {
 
     @KEY("key_index")
     @DEFAULT_INT(-1)
+    @SP_FILE("test_sp_file")
     Call<Integer> getIndex();
 
     @KEY("key_success")
