@@ -1,12 +1,13 @@
 # An android SharedPreference library.
 
 This is an android SharedPreference library. Is process safe and user dynamic proxy, you can use annotation very easy.
+- Support muti-process.
+- Use annotation very easy.
 
 # Notice that.
 
 All values are save in main process, if you are not in main process, the operation will switch into main process by ContentProvider.
-- Support muti-process.
-- Use annotation very easy.
+
 ### Maven
 
 	<dependency>
