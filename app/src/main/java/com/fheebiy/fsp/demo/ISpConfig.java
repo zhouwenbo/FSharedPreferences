@@ -17,20 +17,20 @@ public interface ISpConfig {
 
     @KEY("key_user_id")
     @DEFAULT_STRING("bob zhou")
-    Call<String> getUserId();
+    Call<String> userId();
 
     @KEY("key_index")
     @DEFAULT_INT(-1)
     @SP_FILE("test_sp_file")
-    Call<Integer> getIndex();
+    Call<Integer> index();
 
     @KEY("key_success")
     Call<Boolean> isSuccess();
 
     @KEY("key_price")
-    Call<Float> getPrice();
+    Call<Float> price();
 
     @KEY("key_time")
-    Call<Long> getTime();
+    Call<Long> time();
 
 }

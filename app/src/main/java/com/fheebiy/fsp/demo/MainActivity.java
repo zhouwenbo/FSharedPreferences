@@ -114,30 +114,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (view.getId()) {
             case R.id.btn_string_get:
-                String userId = mISpConfig.getUserId().get();
+                String userId = mISpConfig.userId().get();
                 mResultTv.setText(userId);
                 break;
             case R.id.btn_string_put:
                 String userIdS = mStringEdit.getText().toString();
-                mISpConfig.getUserId().put(userIdS);
+                mISpConfig.userId().put(userIdS);
                 break;
             case R.id.btn_string_remove:
-                mISpConfig.getUserId().remove();
+                mISpConfig.userId().remove();
                 break;
             case R.id.btn_int_get:
-                int index = mISpConfig.getIndex().get();
+                int index = mISpConfig.index().get();
                 mResultTv.setText(index + "");
                 break;
             case R.id.btn_int_put:
                 try {
                     int indexS = Integer.parseInt(mIntEdit.getText().toString());
-                    mISpConfig.getIndex().put(indexS);
+                    mISpConfig.index().put(indexS);
                 } catch (NumberFormatException e) {
                     e.printStackTrace();
                 }
                 break;
             case R.id.btn_int_remove:
-                mISpConfig.getIndex().remove();
+                mISpConfig.index().remove();
                 break;
             case R.id.btn_bool_get:
                 boolean b = mISpConfig.isSuccess().get();
@@ -151,23 +151,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 mISpConfig.isSuccess().remove();
                 break;
             case R.id.btn_float_get:
-                float fs = mISpConfig.getPrice().get();
+                float fs = mISpConfig.price().get();
                 mResultTv.setText(fs + "");
                 break;
             case R.id.btn_float_put:
-                mISpConfig.getPrice().put(Float.parseFloat(mFloatEdit.getText().toString()));
+                mISpConfig.price().put(Float.parseFloat(mFloatEdit.getText().toString()));
                 break;
             case R.id.btn_float_remove:
-                mISpConfig.getPrice().remove();
+                mISpConfig.price().remove();
                 break;
             case R.id.btn_long_get:
-                mResultTv.setText(mISpConfig.getTime().get() + "");
+                mResultTv.setText(mISpConfig.time().get() + "");
                 break;
             case R.id.btn_long_put:
-                mISpConfig.getTime().put(Long.parseLong(mLongEdit.getText().toString()));
+                mISpConfig.time().put(Long.parseLong(mLongEdit.getText().toString()));
                 break;
             case R.id.btn_long_remove:
-                mISpConfig.getTime().remove();
+                mISpConfig.time().remove();
                 break;
             case R.id.remote_btn:
                 startActivity(new Intent(this, RemoteMainActivity.class));
